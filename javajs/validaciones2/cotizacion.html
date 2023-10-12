@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizaciones</title>
+</head>
+<body>
+    <form action="">
+        <label>Producto:</label>
+        <select name="" id="producto">
+            <option value="Vacio">Seleccione producto</option>
+            <option value="1111">Zapatos Adidas</option>
+            <option value="2222">Camisa Nike</option>
+            <option value="3333">Gorra</option>
+        </select>
+        <br>
+        <br>
+        <label>Precio</label>
+        <input type="number" id="precio" min="0" oninput="calcularSubTotal()">
+        <br>
+        <br>
+        <label>Cantidad</label>
+        <input type="number" id="cantidad" min="0" oninput="calcularSubTotal()" >
+        <br>
+        <br>
+        <label>Subtotal</label>
+        <input type="text" id="subtotal" min="0" readonly>
+        <br>
+        <br>
+        <button id="Calcular">Enviar</button>
+    </form>
+
+    <script src="js/funciones.js"></script>
+</body>
+</html>
